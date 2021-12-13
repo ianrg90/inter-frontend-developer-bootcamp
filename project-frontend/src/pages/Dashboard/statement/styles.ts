@@ -23,7 +23,7 @@ export const StatementItemInfo = styled.div`
 
 
 export const StatementItemImage = styled.div<{
-    type: 'pay' | 'received'
+    type: 'paid' | 'received'
 }>`
     width: 60px;
     height: 60px;
