@@ -1,6 +1,7 @@
 :root {
   --vermelho: #e50914;
   --preta: #141414;
+  scroll-behavior: smooth;
 }
 
 * {
