@@ -1,0 +1,171 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*base elements*/
+
+body {
+  background: var(--preta);
+  font-family: "Arial", Times, serif;
+  color: white;
+}
+
+header {
+  width: 100%;
+  margin: 5px 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width:700px){
+
+  header{
+    height: max-content;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav{
+    display: flex;
+    flex-basis: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+  }  
+}
+
+
+.logo {
+  color: var(--vermelho);
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 40px;
+  font-weight: 1000;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/*Main movie*/
+
+.main-movie {
+  background-size: cover;
+  font-size: 15px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-height: 280px){
+
+  .main-movie{
+    height: max-content;
+  }
+
+  .navigation{
+    margin-bottom: 3%;
+  }
+  
+}
+
+.title {
+  margin-top: 15%;
+  font-size: 35px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+}
+
+.main-movie .description {
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.navigation{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width:660px){
+  .navigation a {
+    margin-top: 5%;
+    width: 200px;
+  }
+}
+
+
+.link {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  transition: 0.3s ease all;
+}
+
+.link:hover {
+  background-color: white;
+}
+
+.link i{
+    margin-right: 10px;
+}
+
+.container{
+    margin: 0 20px 0 20px;
+}
+
+.main-movie .container{
+    width: 60%;
+}
+
+.carousel-movies{
+  margin-top: 10px;
+}
+
+/* SignIN page styles*/
+
+.signin-page-logo{
+  font-size: 60px;
+}
+
+.signin-page-p{
+  margin-top: 10%;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
