@@ -1,6 +1,7 @@
 import express, {Request, Response, NextFunction} from "express"
 import usersRoute from "./routes/users.route"
 import statusRouter from "./routes/status.route"
+import errorHandler from "./middlewares/error.handler.middleware"
 
 const app = express()
 
@@ -13,6 +14,10 @@ app.use(express.urlencoded({extended: true}))
 
 app.use(statusRouter)
 app.use(usersRoute)
+
+//Configuracão de Errors handlers
+
+app.use(errorHandler)
 
 //Inicialização do servidor
 
